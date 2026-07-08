@@ -1,5 +1,6 @@
 import { HiArrowRightCircle } from "react-icons/hi2";
 import Button from "./ui/Button";
+import Card from "./ui/Card";
 
 export default function SectionImpact() {
   return (
@@ -20,20 +21,9 @@ export default function SectionImpact() {
       </div>
 
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10 text-center">
-        <div className="text-white gradient-primary w-50 h-50 rounded-2xl flex flex-col justify-center">
-          <h1 className="font-bold text-3xl">+10</h1>
-          <h3>Anos de existência</h3>
-        </div>
-
-        <div className="text-white gradient-primary w-50 h-50 rounded-2xl flex flex-col justify-center">
-          <h1 className="font-bold text-3xl">+1500</h1>
-          <h3>Pessoas beneficiárias</h3>
-        </div>
-
-        <div className="text-white gradient-primary w-50 h-50 rounded-2xl flex flex-col justify-center ">
-          <h1 className="font-bold text-3xl">+50</h1>
-          <h3>Famílias beneficiárias</h3>
-        </div>
+        <Card title="+10" description="Anos de existência" />
+        <Card title="+1500" description="Pessoas beneficiárias" />
+        <Card title="+50" description="Famílias beneficiárias" />
       </div>
     </section>
   );

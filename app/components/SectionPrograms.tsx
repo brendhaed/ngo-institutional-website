@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HiArrowRightCircle } from "react-icons/hi2";
+import Button from "./ui/Button";
 
 export default function SectionPrograms() {
   return (
@@ -14,10 +14,7 @@ export default function SectionPrograms() {
           spécifiques des communautés, en mettant l'accent sur la durabilité et
           l'autonomisation.
         </p>
-        <button className="flex flex-row gap-2 justify-center gradient-primary w-40 rounded-sm p-4 cursor-pointer">
-          Saber mais
-          <HiArrowRightCircle className="text-white w-6 h-6" />
-        </button>
+        <Button variant="solid">Saber mais</Button>
       </div>
 
       {/* div principal 2 */}
