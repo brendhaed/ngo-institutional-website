@@ -1,19 +1,35 @@
+import Image from "next/image";
+import Button from "./ui/Button";
+import { HiArrowRightCircle } from "react-icons/hi2";
+ 
 export default function Hero() {
   return (
-    <section className="bg-[url('/img/hero-banner.jpg')] bg-cover bg-center h-screen">
-    {/* <div className="absolute inset-0 bg-blue-950/50"></div> */}
-      <div className="p-20 flex flex-col gap-10">
-        <h1 className="font-bold uppercase text-5xl">Transformamos alimentos em vida</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam
-        debitis eligendi odit, sequi voluptate eaque recusandae possimus.
-        Inventore perferendis minima mollitia, eaque nemo molestias? Odit
-        dolores similique adipisci nobis?
-      </p>
+    <section className="flex flex-col relative overflow-hidden bg-[#141B34] bg-center lg:p-20">
+      <Image
+        src="/img/hero-banner.jpg"
+        width={500}
+        height={500}
+        alt="Foto de fundo"
+        className="absolute inset-0 h-full w-full object-cover opacity-10 filter bluescale contrast-125 "
+      />
+      <div className="flex flex-col gap-10 px-10 py-10 md:px-20">
+        <h1 className="font-extrabold uppercase text-2xl lg:text-5xl">
+          Transformamos alimentos em vida
+        </h1>
+        <p className="font-base max-w-sm">
+          Mais de 8.000 famílias já receberam apoio através das nossas ações.
+        </p>
       </div>
-      <div className="flex flex-row gap-10">
-        <button className="bg-emerald-500">Nossas causas</button>
-        <button className="bg-emerald-500">Entre em contato</button>
+
+      {/* botões */}
+      <div className="flex flex-col md:flex-row gap-6 px-10 pb-10 md:px-20">
+        <Button variant="solid">Doe Agora</Button>
+        <Button
+          variant="transparent"
+          icon={<HiArrowRightCircle className="w-6 h-6" />}
+        >
+          Saiba mais
+        </Button>
       </div>
     </section>
   );

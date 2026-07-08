@@ -3,7 +3,7 @@ import { IoLocation } from "react-icons/io5"
 
 export default function Topbar(){
     return(
-        <div className="bg-emerald-500 flex flex-row p-2 gap-250">
+        <div className="hidden bg-emerald-500 md:flex flex-row px-8 py-2 md:gap-250 select-none">
             <div className="flex flex-row gap-2">
                 <IoLocation/>
                 <p>Cidade</p>

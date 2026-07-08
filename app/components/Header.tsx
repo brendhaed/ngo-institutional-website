@@ -4,7 +4,7 @@ import Topbar from "./TopBar";
 export default function Header(){
     return(
         <header>
-            <Topbar/>
+            <Topbar/> 
             <Navbar/>
         </header>
     )
