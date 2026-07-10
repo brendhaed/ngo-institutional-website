@@ -5,9 +5,9 @@ export default function About() {
     <section className="flex flex-col pt-20 px-10 lg:flex-row lg:p-20 gap-20 select-none">
       {/* about */}
       <div className="flex flex-col gap-5 select-none">
-        <h1 className="text-[#4AA35E] text-2xl lg:text-3xl font-semibold">
+        <h1>
           Quem somos?
-        </h1>
+        </h1> 
         <p className="text-black max-w-lg">
           YME Grands Lacs est une organisation non gouvernementale dédiée à
           l'amélioration des conditions de vie des communautés vulnérables de la

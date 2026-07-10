@@ -10,19 +10,20 @@ export default function Hero() {
         width={500}
         height={500}
         alt="Foto de fundo"
-        className="absolute inset-0 h-full w-full object-cover opacity-10 filter bluescale contrast-125 "
+        className="absolute inset-0 h-full w-full object-cover opacity-10 filter bluescale contrast-125"
       />
+
       <div className="flex flex-col gap-10 px-10 py-10 md:px-20">
-        <h1 className="font-extrabold uppercase text-2xl lg:text-5xl">
+        <h1 className="text-white font-extrabold uppercase text-2xl lg:text-5xl">
           Transformamos alimentos em vida
         </h1>
-        <p className="font-base max-w-sm">
+        <p className="text-white font-base max-w-sm">
           Mais de 8.000 famílias já receberam apoio através das nossas ações.
         </p>
       </div>
 
       {/* botões */}
-      <div className="flex flex-col md:flex-row gap-6 px-10 pb-10 md:px-20">
+      <div className="flex flex-col items-start lg:flex-row gap-5 px-10 pb-10 md:px-20">
         <Button variant="solid">Doe Agora</Button>
         <Button
           variant="transparent"

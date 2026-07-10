@@ -13,9 +13,9 @@ export default function Button({
 }: ButtonProps) {
   const variants = {
     solid:
-      "bg-linear-to-r from-[#4AA35E] to-[#1BB722] px-6 py-3 text-white",
+      "bg-linear-to-r from-[#4AA35E] to-[#1BB722] px-8 py-3 text-white",
     transparent:
-      "bg-transparent border-2 border-[#4AA35E] px-6 py-3 text-[#4AA35E]",
+      "bg-transparent border-2 border-[#4AA35E] px-4 py-3 text-[#4AA35E]",
   };
 
   return (

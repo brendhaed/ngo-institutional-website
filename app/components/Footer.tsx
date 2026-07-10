@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaX } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -34,7 +34,7 @@ export default function Footer() {
       <div className="border-t border-gray-200 my-6" />
 
       <div className="flex flex-col-reverse gap-20 md:flex-row md:gap-150 items-center">
-        <p className="text-sm max-w-lg">YME GRANDS-LACS  © 2026. Todos direitos reservados.</p>
+        <p className="text-white text-sm max-w-lg">YME GRANDS-LACS  © 2026. Todos direitos reservados.</p>
         <div className="flex flex-row gap-5">
             <a href="#" className="bg-white rounded-full w-10 h-10 flex items-center justify-center">
                 <FaFacebook className="w-8 h-8 text-black"/>
@@ -43,7 +43,7 @@ export default function Footer() {
                 <FaInstagram className="w-8 h-8 text-black"/>
             </a>
             <a href="#" className="bg-white rounded-full w-10 h-10 flex items-center justify-center">
-                <FaX className="w-8 h-8 text-black"/>
+                <FaXTwitter className="w-8 h-8 text-black"/>
             </a>
         </div>
       </div>

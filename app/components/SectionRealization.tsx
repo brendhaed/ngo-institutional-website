@@ -2,7 +2,7 @@ import Button from "./ui/Button";
 
 export default function SectionRealization() {
   return (
-    <section className="p-10 md:p-20">
+    <section className="p-10 md:p-20 select-none">
       <div className="flex flex-col items-start gap-5">
         <h1 className="text-2xl text-gradient-primary font-bold">
           Realizações

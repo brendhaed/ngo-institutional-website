@@ -6,12 +6,12 @@
 
 body {
   font-family: Roboto, Arial, sans-serif;
-  color: white;
+  /* color: white; */
 }
 .gradient-primary {
   @apply bg-linear-to-r from-[#4AA35E] to-[#1BB722];
 }
- @layer components {
+@layer components {
   .text-gradient-primary {
     @apply bg-linear-to-r from-[#4AA35E] to-[#1BB722] bg-clip-text text-transparent;
   }
@@ -20,7 +20,7 @@ body {
   }
 }
 
- @theme inline {
+@theme inline {
   --font-heading: var(--font-sans);
   --font-sans: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -63,7 +63,7 @@ body {
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
- :root {
+:root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -98,7 +98,7 @@ body {
   --sidebar-ring: oklch(0.708 0 0);
 }
 
- .dark {
+.dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -132,7 +132,7 @@ body {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
- @layer base {
+@layer base {
   * {
     @apply border-border outline-ring/50;
   }
@@ -141,5 +141,17 @@ body {
   }
   html {
     @apply font-sans;
+  }
+  h1 {
+    @apply text-[#4AA35E] text-2xl font-semibold md:text-3xl;
+  }
+  h3{
+    @apply text-white text-base md:text-2xl ;
+  }
+  p {
+    @apply text-sm md:text-base;
+  }
+  a{
+    @apply text-white
   }
 }
